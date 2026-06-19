@@ -91,7 +91,7 @@ zero-shot baseline.
 | analysis | 0.55 | 1.00 | 0.71 | 12 |
 | hot_take | 0.62 | 0.50 | 0.56 | 10 |
 | reaction | 1.00 | 0.20 | 0.33 | 10 |
-| **weighted avg** | **0.68** | **0.59** | **0.55** | **32** |
+| **weighted avg** | **0.71** | **0.59** | **0.54** | **32** |
 
 ### Per-class metrics — baseline
 
@@ -106,9 +106,9 @@ zero-shot baseline.
 
 | | Predicted: analysis | Predicted: hot_take | Predicted: reaction |
 |---|---|---|---|
-| **True: analysis** | 11 | 1 | 0 |
-| **True: hot_take** | 6 | 2 | 2 |
-| **True: reaction** | 5 | 0 | 5 |
+| **True: analysis** | 12 | 0 | 0 |
+| **True: hot_take** | 5 | 5 | 0 |
+| **True: reaction** | 5 | 3 | 2 |
 
 The dominant error pattern is hot_take and reaction being predicted as analysis. The model
 learned to over-predict analysis (22 predictions vs 12 true), while under-predicting hot_take
