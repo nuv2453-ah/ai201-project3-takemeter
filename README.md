@@ -88,9 +88,9 @@ zero-shot baseline.
 
 | Label | Precision | Recall | F1 | Support |
 |---|---|---|---|---|
-| analysis | 0.48 | 0.92 | 0.63 | 12 |
-| hot_take | 0.67 | 0.20 | 0.31 | 10 |
-| reaction | 1.00 | 0.50 | 0.67 | 10 |
+| analysis | 0.55 | 1.00 | 0.71 | 12 |
+| hot_take | 0.62 | 0.50 | 0.56 | 10 |
+| reaction | 1.00 | 0.20 | 0.33 | 10 |
 | **weighted avg** | **0.68** | **0.59** | **0.55** | **32** |
 
 ### Per-class metrics — baseline
@@ -112,8 +112,8 @@ zero-shot baseline.
 
 The dominant error pattern is hot_take and reaction being predicted as analysis. The model
 learned to over-predict analysis (22 predictions vs 12 true), while under-predicting hot_take
-(3 predictions vs 10 true). This is visible in hot_take's 0.20 recall — the model catches only
-2 out of 10 hot takes.
+(3 predictions vs 10 true). This is visible in hot_take and reaction being predicted as analysis. Reaction has 0.20 recall — the model catches only
+2 out of 10 reactions.
 
 ### Wrong prediction analysis
 
