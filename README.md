@@ -201,4 +201,4 @@ model that barely clears an arbitrary bar.
 
 ## Demo Video
 
-[Link to demo video]
+https://youtu.be/1yLtOszq6SE
